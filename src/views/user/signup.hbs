@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="mx-auto h2salas" style="width: 180px;">REGISTRAR NUEVO USUARIO</h2>
+            </div>
+            <img src="https://cdn-icons-png.flaticon.com/512/3200/3200751.png" class="mx-auto d-block m-4 logo">
+            
+            <div class="card-body login-form">
+                <form action="/user/signup" method="POST">
+                    <div class="form-groupDIV">
+                        <input type="text" class="form-controlDIV" name="name" placeholder="Nombre" value="{{name}}">
+                    </div>
+                    <div class="form-groupDIV">
+                        <input type="email" class="form-controlDIV" name="email" placeholder="Correo Electronico" value="{{email}}">
+                    </div>
+                    <div class="form-groupDIV">
+                        <input type="password" class="form-controlDIV" name="password" placeholder="Contraseña" value="{{password}}">
+                    </div>
+                     <div class="form-groupDIV">
+                    <input type="password" class="form-controlDIV" name="confirm_password" placeholder="Confirmar Contraseña" value="{{confirm_password}}">
+                </div>
+                <button class="btns ">
+                    Registrarme
+                </button>
+                </form>
+                <p>Ya tienes cuenta?
+                    <a href="/user/signin" class="text-decoration-none" > <span class="text-primary ">Inicia Sesión aqui.</span> </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="col-md-4 mx-auto">
+    <div class="card shadow">
+        <center>
+        <div class="card-header">
+            <h3 class="text-success font-italic">Editar Ticket</h3>
+            <img src="https://cdn-icons-png.flaticon.com/512/1160/1160515.png" class="logo" alt="">
+        </div>
+        </center>
+        <div class="card-body login-form">
+            <form action="/tickets/edit/{{ps._id}}?_method=PUT" method="POST">
+            <input type="hidden" name="_method" value="PUT">
+
+         <div class="form-groupDIV">
+                    <input type="text" name="nombre" class="form-controlDIV" placeholder="Nombre" value="{{ps.nombre}}" autofocus required>
+                </div>
+                <div class="form-groupDIV">
+                    <input type="text" name="documento" class="form-controlDIV" placeholder="Documento" value="{{ps.documento}}" autofocus required>
+                </div>
+                <div class="form-groupDIV">
+                     <textarea name="problema" class="form-controlDIV" placeholder="Problema" cols="20" rows="3" value="{{ps.problema}}" autofocus required></textarea>
+                </div>
+                <div class="form-groupDIV">
+                    <button class="btn btn-outline-success">
+                        Actualizar Ticket
+                    </button>
+                </div>
+                <div >
+                    <a href="/tickets" class="text-decoration-none">
+                        <h6 class="text-danger p-2">Cancelar</h6>
+                    </a>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+

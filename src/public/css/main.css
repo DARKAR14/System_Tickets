@@ -1,0 +1,153 @@
+body{
+    background-color: #edd6d6;
+    transition: background-color 0.5s/*, transform 0.5s*/;
+}
+
+body:hover{
+  background-color: #d8dce1;
+  /*transform: rotateX(-2px);*/
+}
+
+.navbarNavigations{
+  transition: transform 0.5s;
+
+}
+
+.navbarNavigations:hover{
+  transform: translateY(-6px);
+}
+
+/*#footer{transition: transform 0.5s;}
+
+#footer:hover{
+  transform: translateY(8px);
+}*/
+
+.h2salas{
+  color: rgb(116, 126, 126);
+  transition: color 0.5s, transform 0.5s;
+}
+
+.h2salas:hover{
+  color: rgb(93, 87, 87);
+  transform: translateY(-4px);
+}
+
+
+.logo{
+  width: 40%;
+  height: 50%;
+  border-radius: 25px;
+  transition: transform 0.5s;
+}
+
+.logo:hover {
+  /*background-image: url("https://ejemplo.com/ruta-de-imagen-hover.jpg");*/
+  transform: perspective(500px) rotateY(45deg);
+  
+}
+
+.login-form {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  transition: border-radius 0.5s , background-color 0.5s ;
+}
+
+.login-form:hover{
+  border-radius: 15px;
+  background-color: rgba(218, 255, 199, 0.447);
+}
+
+
+.form-groupDIV {
+  margin-bottom: 10px;
+  transition: transform 0.5s , border-radius 0.5s;
+}
+
+.form-groupDIV:hover{
+  transform: translate3d(4px, 5px, 4px);
+  border-radius: 15px;
+}
+
+.form-controlDIV {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btns {
+  padding: 10px 20px;
+  background-color: #6aa2e1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s , transform 0.5s;
+}
+
+.btns:hover {
+  background-color: #45b552;
+  transform: translateY(2px);
+}
+
+.nuevoTicket{
+  color: teal;
+}
+
+.nuevoTicket:hover{
+  color: rgb(3, 176, 176);
+}
+
+.lapizclass{
+  color: mediumorchid;
+  transition: color 0.6s;
+}
+
+.lapizclass:hover{
+  color: rgb(226, 148, 246);
+}
+
+.palabraticket{
+  color: #24a188;
+  transition: color 0.6s;
+}
+
+.palabraticket:hover{
+  color: #50c6c0;
+}
+
+.todoeldiv {
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.5s;
+}
+
+.todoeldiv:hover{
+  background-color: rgb(204, 201, 201);
+}
+
+
+
+
+.header {
+    background-color: #f1f1f1; /* Color de fondo */
+    background-size: 1%; /* Ajustar la imagen al tamaño del contenedor */
+    height: 10%; /* Altura del encabezado */
+}
+
+.card-container {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  }
+.cards{
+    margin: 5px;
+    
+}
+  .img {
+    width: 100%; /* Ancho fijo */
+    height: 50%; /* Alto fijo */
+  }

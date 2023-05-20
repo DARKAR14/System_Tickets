@@ -1,0 +1,27 @@
+<div class="row">
+    {{#each jk}}
+    <div class="col-md-3 ">
+        <div class="card todoeldiv">
+            <div class="card-body">
+                <h1 class="card-title d-flex justify-content-between aling-items-center palabraticket">
+                    Ticket <a href="/tickets/edit/{{_id}}"><i class="fa fa-pencil lapizclass"></i></a>
+                </h1>
+                <a href="{{imageURL}}" target="_blank">
+                    <img src="{{imageURL}}" class="img">
+                </a>
+                <div class="list-group list-group-flush">
+                    <h5><strong>Numero de Ticket: </strong> {{numerodeticket}}</h5>
+                    <h5><strong>Documento: </strong> {{documento}}</h5>
+                    <h5><strong>Nombre :</strong> {{nombre}}</h5>
+                    <h5><Strong>Problema: </Strong> {{problema}}</h5>
+                </div>
+                <form action="/tickets/delete/{{_id}}?_method=DELETE" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="btn btn-outline-danger btn-block btn-sm">Eliminar Ticket</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+<br><br><br><br><br><br><br><br><br><br><br>

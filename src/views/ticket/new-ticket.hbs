@@ -1,0 +1,31 @@
+<div class="col-md-4 mx-auto">
+    <div class="card text-center shadow">
+        <div class="card-header">
+            <h3 class="nuevoTicket">Nuevo Ticket</h3>
+            <img src="https://www.freeiconspng.com/thumbs/hd-tickets/download-ticket-ticket-free-entertainment-icon-orange-ticket-design-0.png" class="logo" alt="">
+        </div>
+        <div class="card-body login-form">
+            <form action="/tickets/new-ticket" method="post" enctype="multipart/form-data">
+
+                <div class="form-groupDIV">
+                    <input type="text" name="nombre" class="form-controlDIV" placeholder="Nombre" autofocus required>
+                </div>
+                <div class="form-groupDIV">
+                    <input type="text" name="documento" class="form-controlDIV" placeholder="Documento" autofocus required>
+                </div>
+                <div class="form-groupDIV">
+                     <textarea name="problema" class="form-controlDIV" placeholder="Problema" cols="20" rows="3" autofocus required></textarea>
+                </div>
+                <div class="custom-file">
+              <input type="file" name="image" class="custom-file-input" id="inputGroupFile01">
+              <label for="inputGroupFile01" class="custom-file-label">Subir Imagen</label>
+            </div>
+                <div class="form-groupDIV">
+                    <button class="btns">
+                        Ingresar Ticket
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
